@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #caedf7;
+    font-family: "Roboto", sans-serif;
+}
+main{
+    width: min(700px,90%);
+    margin: 0;
+}
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+.flex__col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.icon__pas{
+   width: 25px;
+}
+
+.GetPass{
+    background-color: white;
+    padding: 1.5em 1em 0.75em 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom: 0.65em solid #368149;
+}
+
+#CreatePass{
+    width:calc( 100% - 100px);
+    background: transparent;
+     padding-block: 1em;
+     border: 0;
+font-size: 1.5rem;
+    font-weight: 600;
+}
+.pass__button{
+    padding: 0.25em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.pass__part__02{
+    background-color: white;
+    padding: 1.75em;
+    margin-top: 1em;
+    border-radius: 1em;
+}
+
+.Pass__setting{
+    display: flex;
+    justify-content: space-between;
+    padding-block:1.5em 1em;
+   
+}
+.flex__center{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media screen and (max-width:330px) {
+.flex__center{
+    flex-direction: column;
+}
+.pass__punct{
+    margin-top: 2em;
+}
+}
+@media screen and (min-width:631px) {
+    .flex__center{
+        width: 50%;
+    }
+}
+@media screen and (max-width:630px) {
+    .Pass__setting{
+        flex-direction: column;
+    }
+    .flex__center{
+        margin-top: 2em;
+       width: min(300px,100%);
+    }
+}
+span + span {
+    margin-top: 0.75em;
+}
+
+label,p{
+ font-weight: 500;  
+ font-size: 1.15rem; 
+}
+.heading{
+    font-weight: 800;
+    margin-bottom: 0.15em;
+}
+
+#Number{
+    width: 65px;
+    height: 40px;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 2px solid #dde0e4;
+    border-radius: 5px;
+    margin-right: .5em;
+}
+
+.number__range{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1em;
+}
+/* designing range input */
+#Range{
+    background-color: red;
+}
+
+#button{
+    cursor: pointer;
+    margin-top: 1.25em;
+    display: block;
+    margin-inline: auto;
+    background-color: #dd2222;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5em 1.5em;
+    border: 0;
+    border-radius: 5em;
+}
+

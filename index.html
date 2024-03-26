@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="GetPass Container">
+            <input type="text" name="" id="CreatePass">
+            <button class="pass__button copyButton">
+                <img class="icon__pas" src="copy-link.png" alt="">
+            </button>
+            <button class="pass__button refreshButton">
+                <img class="icon__pas" src="refresh.png" alt="">
+            </button>
+        </div>
+
+        <div class="pass__part__02 Container">
+            <h1 class="heading">Customize your password</h1>
+            <hr>
+            <div class="Pass__setting">
+                <div class="pass__length">
+                    <p>Password Length</p>
+                    <div class="number__range" >
+                        <input type="number" name="" id="Number" min="1" max="50" >
+                        <input type="range" name="" id="Range"  min="1" max="50">
+                    </div>
+                </div>
+                <div class="flex__center">
+                    <div class="Pass__easy flex__col">
+                        <span><input type="radio" name="PASS" id="SAY" class="radio">
+                        <label for="SAY">Easy to say</label></span>
+                        <span><input type="radio" name="PASS" id="read" class="radio">
+                        <label for="read">Easy to read</label></span>
+                        <span><input type="radio" name="PASS" id="char" checked="checked" class="radio">
+                        <label for="char">All characters</label></span>
+                    </div>
+                    <div class="pass__punct flex__col">
+                        <span><input type="checkbox" name="" id="uppercase">
+                        <label for="uppercase">Uppercase</label></span>
+                        <span><input type="checkbox" name="" id="Lowercase">
+                        <label for="Lowercase">Lowercase</label></span>
+                        <span><input type="checkbox" name="" id="Numbers">
+                        <label for="Numbers">Numbers</label></span>
+                        <span><input type="checkbox" name="" id="Symbols">
+                        <label for="Symbols">Symbols</label></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="button">Create Password</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
