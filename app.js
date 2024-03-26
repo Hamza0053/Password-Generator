@@ -7,6 +7,7 @@ let copy=document.querySelector('.copyButton')
 let Say=document.getElementById('SAY')
 let read=document.getElementById('read')
 let character=document.getElementById('char')
+character.checked=true
 let radio=document.querySelectorAll('.radio')
 // Checkbox
 const upperCase=document.getElementById('uppercase')
@@ -37,14 +38,14 @@ if (Say.checked)
     Symbols.checked=false
     Numbers.checked=false
 }
-else if(read.checked)
+if(read.checked)
 {
     upperCase.checked=true
     lowerCase.checked=true
     Symbols.checked=false
     Numbers.checked=false
 }
-else
+if(character.checked)
 {
     upperCase.checked=true
     lowerCase.checked=true
@@ -52,7 +53,10 @@ else
     Numbers.checked=true
 }
 }
-
+upperCase.checked=true
+lowerCase.checked=true
+Symbols.checked=true
+Numbers.checked=true
 radio.forEach((rd)=>{
     rd.addEventListener('click',TypePass)
 })
